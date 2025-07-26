@@ -1,0 +1,29 @@
+<!DOCTYPE?>
+<html lang="en">
+<head>      
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>     
+<body>
+<p>{{ name }}</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Dog name</th>
+            <th>Dog age</th>
+        </tr>
+        {% for dog in dogs %}
+        <tr>
+            <td>{{dog.name}}</td>
+            <td>{{dog.age}}</td>
+        </tr>
+    {% endfor %}
+    </thead>
+    
+</table>
+
+</body>
+</html>
